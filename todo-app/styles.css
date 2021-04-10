@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
+#app {
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  height: 100vh;
+  background-color: rgb(184, 228, 248);
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(158, 225, 252);
+  border-radius: 20px;
+  box-shadow: lightgray;
+  width: 360px;
+  padding: 50px;
+}
+
+h1 {
+  font-size: 36px;
+}
+.task-item {
+  margin: 5px;
+}
+.btn {
+  padding: 10px;
+  background-color: slateblue;
+  border: none;
+  border-radius: 20px;
+  color: #fff;
+}
+input {
+  padding: 10px;
+  border-radius: 2%;
+  border: none;
+  margin-bottom: 5px;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: rgb(75, 63, 153);
+}
+.btn:focus {
+  border: none;
+  outline: none;
+}
