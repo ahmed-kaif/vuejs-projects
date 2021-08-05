@@ -12,12 +12,17 @@ const App = Vue.createApp({
     addTask() {
       if (this.newTask !== '') {
         let task = {
-          id: this.tasks.length,
+          id: this.tasks.length + 1,
           title: this.newTask,
         }
         this.tasks.push(task)
         this.newTask = ''
       }
+    },
+    deleteTask(id) {
+      // console.log(id)
+      // let el = this.tasks.some(id)
+      // console.log(el)
     },
   },
 })

@@ -14,9 +14,10 @@
         <label for="task">Add Task</label>
         <input v-model="newTask" type="text" name="task" id="task" @keyup.enter="addTask"  />
         <span><button @click="addTask"class="btn">Add Task</button></span>
-        <p class="task-item" v-for="task in tasks" :key="task.id">
+        <div class="task-item" v-for="task in tasks" :key="task.id">
           {{task.title}}
-        </p>
+          <span><button @click="deleteTask(task.id)" class="btn">Delete</button></span>
+        </div>
     </div>
     <script src="https://unpkg.com/vue@next"></script>
     <script src="./app.js"></script>
